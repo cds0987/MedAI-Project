@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: url('/static/Images/Artificial-General-Intelligence-AGI.jpg') no-repeat center center / cover;
+  background-attachment: fixed;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.8);
+  /* Semi-transparent background for contrast */
+  color: #fff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  margin-left: 20px;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+header ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  /* Dark overlay for readability */
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Section Styles */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+#overview,
+#models {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#overview h2,
+#models h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.models table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.models table thead {
+  background: #333;
+  color: #fff;
+}
+
+.models table th,
+.models table td {
+  padding: 10px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.models table tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.models .back-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.models .back-button:hover {
+  background: #555;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.zoom-container {
+  width: 500px;
+  /* Container size */
+  height: 500px;
+  /* Container size */
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+  /* Cursor changes to grabbing when the user clicks and drags */
+}
+
+.zoomable {
+  position: absolute;
+  user-select: none;
+  /* Prevent text selection while dragging */
+  transition: transform 0.2s ease;
+}

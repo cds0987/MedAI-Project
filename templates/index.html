@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDAI Powerhouse</title>
+    <!-- Correctly link to the CSS file from the static folder using Flask's url_for -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">MEDAI</div>
+            <ul>
+                <!-- Example of Flask routing for links -->
+                <li><a href="{{ url_for('route.about') }}">ABOUT US</a></li>
+                <li><a href="{{ url_for('route.model_capacity') }}">MODEL CAPABILITIES</a></li> <!-- Updated here -->
+                <li><a href="{{ url_for('route.media') }}">INVESTORS & MEDIA</a></li>
+                <li><a href="{{ url_for('route.references') }}">REFERENCES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1> <span>MEDAI</span> Powerhouse</h1>
+            <p>Leveraging AGI to diagnose and treat diseases.</p>
+            <div class="buttons">
+                <a href="{{ url_for('route.MainPage') }}" class="button blue">START TO WORK</a>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+</body>
+
+</html>

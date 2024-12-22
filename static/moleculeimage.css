@@ -1,0 +1,341 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('/static/Images/describer.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container Styles */
+.container {
+    max-width: 900px;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+/* Header Styles */
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+/* Form Section */
+.form-section h2 {
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input[type="file"] {
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
+    font-size: 1em;
+}
+
+button.btn-submit {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(0, 150, 255, 0.8);
+    text-align: center;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+button.btn-submit:hover {
+    background: rgba(0, 150, 255, 1);
+}
+
+/* Results Section */
+.results-section {
+    margin-top: 30px;
+    color: #fff;
+}
+
+.description-box,
+.image-box {
+    margin: 15px 0;
+}
+
+.description-box p {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Back to Main Section */
+
+.button-container {
+    display: flex;
+    /* Enables flexbox */
+    justify-content: center;
+    /* Centers buttons horizontally */
+    gap: 15px;
+    /* Adds spacing between buttons */
+    margin: 20px 0;
+    /* Adds vertical margin for the section */
+}
+
+/* Shared button styles */
+.button {
+    display: inline-block;
+    /* Makes buttons inline elements */
+    padding: 12px 25px;
+    /* Adjust padding for size */
+    text-decoration: none;
+    /* Removes underline from links */
+    color: white;
+    /* Button text color */
+    background-color: #007BFF;
+    /* Button background color */
+    border-radius: 8px;
+    /* Rounded corners */
+    font-size: 16px;
+    /* Adjust font size */
+    text-align: center;
+    /* Centers text inside the button */
+    transition: background-color 0.3s ease;
+    /* Smooth hover transition */
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    background-color: #0056b3;
+    /* Darker color on hover */
+}
+
+/* Specific button styles if needed (optional) */
+.back-button {
+    background-color: #28a745;
+    /* Green for back button */
+}
+
+.back-button:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+}
+
+.feedback-button {
+    background-color: #ffc107;
+    /* Yellow for feedback button */
+}
+
+.feedback-button:hover {
+    background-color: #e0a800;
+    /* Darker yellow on hover */
+}
+
+.results-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.result-content {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+.uploaded-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.smiles-box {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #1c1c1c;
+    /* Dark background for the SMILES box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgba(255, 0, 255, 0.5);
+    /* Neon purple glowing effect */
+    max-width: 80%;
+    /* Constrain the width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description-box {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #2c2c2c;
+    /* Dark gray background for the description box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(255, 0, 255, 0.3);
+    /* Soft neon purple shadow */
+}
+
+.description-box h2 {
+    font-size: 1.5rem;
+    color: #FF00FF;
+    /* Neon Purple color for the heading */
+    font-weight: bold;
+}
+
+.description-box p {
+    font-size: 1rem;
+    color: #FFD700;
+    /* Vibrant yellow color for description text */
+}
+
+.generated-image {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+    /* Darker background for generated image section */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 255, 255, 0.3);
+    /* Soft cyan shadow */
+}
+
+.generated-structure {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #00FF00;
+    /* Neon Green border around the generated image */
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.image-box {
+    text-align: center;
+    /* Center the content */
+}
+
+.zoom-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    /* Hide overflow when zoomed in */
+    max-width: 100%;
+    /* Allow the container to take up available space */
+}
+
+.zoomable {
+    width: 300px;
+    /* Resize to a larger fixed width (you can adjust this value) */
+    height: 300px;
+    /* Set the height to the same as the width to keep the aspect ratio square */
+    object-fit: cover;
+    /* Ensures the image covers the area while maintaining aspect ratio */
+    transition: transform 0.3s ease-in-out;
+    /* Smooth zoom transition */
+}
+
+.zoom-container:hover .zoomable {
+    transform: scale(2);
+    /* Zoom the image by 2x on hover */
+}
+
+/* Optional: Mouse wheel zoom */
+.zoom-container {
+    cursor: zoom-in;
+}
+
+.zoom-container:active .zoomable {
+    cursor: zoom-out;
+}
+
+/* Styling for the navigation buttons section */
+.navigation-buttons {
+    text-align: center;
+    /* Center the button */
+    margin-top: 20px;
+    /* Add spacing above the section */
+}
+
+/* Styling for the back button */
+.navigation-buttons .back-button {
+    display: inline-block;
+    /* Makes the link look like a button */
+    padding: 12px 24px;
+    /* Add padding for a comfortable button size */
+    background-color: #007BFF;
+    /* Primary blue color */
+    color: #fff;
+    /* White text for contrast */
+    font-size: 16px;
+    /* Readable font size */
+    font-weight: bold;
+    /* Makes the text stand out */
+    text-decoration: none;
+    /* Removes underline */
+    border-radius: 8px;
+    /* Rounded corners */
+    transition: all 0.3s ease;
+    /* Smooth hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+}
+
+/* Hover effect for the button */
+.navigation-buttons .back-button:hover {
+    background-color: #0056b3;
+    /* Darker blue for hover */
+    color: #e0e0e0;
+    /* Slightly lighter text on hover */
+    transform: translateY(-3px);
+    /* Moves the button up slightly */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    /* Enhances the shadow */
+}
+
+/* Active state for the button */
+.navigation-buttons .back-button:active {
+    transform: translateY(1px);
+    /* Moves the button down on click */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Restores the shadow */
+    background-color: #004085;
+    /* Even darker blue for active */
+}

@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  background-image: url('/static/Images/AIDevelopment.png'); /* Corrected background image path */
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-position: center center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  opacity: 0.9; /* Optional: to slightly blend the container with the background */
+}
+
+/* Header */
+h1 {
+  font-size: 2.5em;
+  color: #3f51b5;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2, h3, h4 {
+  color: #2c3e50;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+/* Back to Main Page Link */
+.back-to-main {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #3f51b5;
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.back-button:hover {
+  background-color: #5c6bc0;
+}
+
+/* AI & Bioinformatics Links */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+a {
+  color: #3f51b5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Model Cards */
+#models .model-card {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+#models .model-card:hover {
+  background-color: #f0f4f8;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+#models .model-card h3 {
+  color: #2c3e50;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+#models .model-card p {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #3f51b5;
+  color: #fff;
+  border-radius: 8px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 2em;
+  }
+
+  .model-card {
+      padding: 15px;
+      margin: 15px 0;
+  }
+
+  .model-card h3 {
+      font-size: 1.5em;
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model Capacity - AI Platform</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='model.css') }}">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">MedAI Platform</div>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#models">Models</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to the AI Components of Our Platform</h1>
+      <p>Explore cutting-edge AI models designed for medical image diagnosis and beyond.</p>
+    </div>
+  </section>
+
+  <section id="overview" class="overview">
+    <div class="container">
+      <h2>Platform Overview</h2>
+      <p>Our platform offers a range of efficient AI models tailored to medical applications, including classification,
+        object detection, and image segmentation. Each model is optimized for performance and reliability, ensuring the
+        best outcomes for healthcare professionals.</p>
+    </div>
+  </section>
+
+  <section id="models" class="models">
+    <div class="container">
+      <div class="back-to-main">
+        <a href="{{ url_for('route.index') }}" class="back-button">Back to Main Page</a>
+      </div>
+      <h2>Our Models</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Model Name</th>
+            <th>Task</th>
+            <th>Datasets</th>
+            <th>Number of Parameters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>EfficientNet-B0</td>
+            <td>Classification</td>
+            <td>ImageNet</td>
+            <td>5,300,000</td>
+          </tr>
+          <tr>
+            <td>Pyramid Vision Transformer (PVT)</td>
+            <td>Object Detection</td>
+            <td>COCO</td>
+            <td>12,000,000</td>
+          </tr>
+          <tr>
+            <td>SegFormer NVIDIA-B0</td>
+            <td>Segmentation</td>
+            <td>ADE20K, Cityscapes</td>
+            <td>3,700,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <p>&copy; 2024 MedAI Platform. All Rights Reserved. | <a href="mailto:contact@medai.ai">Contact Us</a></p>
+    </div>
+  </footer>
+</body>
+
+</html>

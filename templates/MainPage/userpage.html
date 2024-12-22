@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Med AI Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='mainpage.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Med AI Platform</h1>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="feature-cards">
+                <a href="{{ url_for('route.move_brain_class') }}" class="feature-card vibrant">
+                    <h3>Brain Tumor Classification</h3>
+                </a>
+                <a href="{{ url_for('route.move_cataract') }}" class="feature-card vibrant">
+                    <h3>Cataract Classification</h3>
+                </a>
+                <a href="{{ url_for('route.move_oral') }}" class="feature-card vibrant">
+                    <h3>Oral Classification</h3>
+                </a>
+                <a href="{{ url_for('route.move_brain_detect') }}" class="feature-card vibrant">
+                    <h3>Brain Tumor Detection</h3>
+                </a>
+                <a href="{{ url_for('route.move_retina') }}" class="feature-card vibrant">
+                    <h3>Retinal Segmentation</h3>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Med AI Platform | All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>

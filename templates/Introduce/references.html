@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedAI Development Resources</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='references.css') }}">
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Back to Main Page Link -->
+    <div class="back-to-main">
+      <a href="{{ url_for('route.index') }}" class="back-button">Back to Main Page</a>
+    </div>
+
+    <h1>MedAI Development Resources</h1>
+    <p>Welcome to the reference page for building AI-powered applications for medical imaging. Below are curated links
+      to frameworks, models, and tools focused on advancing AI in diagnostics, image analysis, and healthcare
+      applications.</p>
+
+    <!-- AI Frameworks for Medical Imaging -->
+    <h2>AI Frameworks for Medical Imaging</h2>
+    <ul id="ai-links">
+      <li><a href="https://pytorch.org/" target="_blank">PyTorch</a> - A widely-used framework for deep learning,
+        perfect for building and training neural networks for medical imaging.</li>
+      <li><a href="https://tensorflow.org/" target="_blank">TensorFlow</a> - A powerful open-source platform for AI
+        development, with extensive support for image processing tasks.</li>
+      <li><a href="https://monai.io/" target="_blank">MONAI</a> - A specialized PyTorch-based framework designed for
+        deep learning in healthcare imaging.</li>
+    </ul>
+
+    <!-- Medical Imaging Research Papers -->
+    <h3>Medical Imaging Research Papers</h3>
+    <ul>
+      <li><a href="https://arxiv.org/abs/1804.03999" target="_blank">UNet: Convolutional Networks for Biomedical Image
+          Segmentation</a> - A foundational paper for medical image segmentation using deep learning.</li>
+      <li><a href="https://arxiv.org/abs/1904.08134" target="_blank">EfficientNet: Rethinking Model Scaling for
+          Convolutional Neural Networks</a> - Introduces EfficientNet, ideal for medical image classification tasks.
+      </li>
+      <li><a href="https://arxiv.org/abs/2105.15203" target="_blank">SegFormer: Simple and Efficient Design for Semantic
+          Segmentation</a> - Explains SegFormer, a transformer-based architecture for image segmentation.</li>
+      <li><a href="https://arxiv.org/abs/2001.04735" target="_blank">Pyramid Vision Transformer (PVT): A Versatile
+          Backbone for Dense Prediction</a> - Describes PVT, an advanced model for object detection in medical imaging.
+      </li>
+    </ul>
+
+    <!-- Tools for Medical Image Analysis -->
+    <h2>Tools for Medical Image Analysis</h2>
+    <ul id="bioinformatics-links">
+      <li><a href="https://www.itksnap.org/" target="_blank">ITK-SNAP</a> - A tool for medical image segmentation,
+        including manual and semi-automatic methods.</li>
+      <li><a href="https://www.simpleitk.org/" target="_blank">SimpleITK</a> - A library for image analysis tasks,
+        particularly in medical imaging.</li>
+      <li><a href="https://dicom.offis.de/en/dcmtk/" target="_blank">DCMTK</a> - A toolkit for working with DICOM files,
+        widely used in medical imaging systems.</li>
+      <li><a href="https://bioimagesuiteweb.github.io/" target="_blank">BioImage Suite</a> - A software for processing
+        and analyzing medical images, including segmentation and visualization.</li>
+    </ul>
+
+    <!-- Additional Resources for MedAI Development -->
+    <h2>Additional Resources for MedAI Development</h2>
+    <ul>
+      <li><a href="https://radiopaedia.org/" target="_blank">Radiopaedia</a> - A resource for understanding medical
+        imaging techniques and cases.</li>
+      <li><a href="https://nihcc.app.box.com/v/ChestXray-NIHCC" target="_blank">ChestX-ray Dataset</a> - A dataset for
+        training AI models on chest X-ray images.</li>
+      <li><a href="https://medical.nema.org/" target="_blank">DICOM Standards</a> - Reference for understanding and
+        working with the DICOM standard in medical imaging.</li>
+      <li><a href="https://grand-challenge.org/" target="_blank">Grand Challenges in Medical Imaging</a> - A platform
+        for benchmarking and improving medical image analysis algorithms.</li>
+    </ul>
+
+    <!-- Bio-AI Integration and Medical Diagnostics -->
+    <h2>Bio-AI Integration and Medical Diagnostics</h2>
+    <ul id="bio-ai-links">
+      <li><a href="https://arxiv.org/" target="_blank">arXiv: AI for Medical Imaging</a> - Research papers focusing on
+        AI advancements in medical imaging and diagnostics.</li>
+      <li><a href="https://ai.googleblog.com/2020/05/ai-for-lung-x-ray-assistance.html" target="_blank">Google AI on
+          Medical Imaging</a> - Case studies and breakthroughs from Google’s AI in healthcare initiatives.</li>
+      <li><a href="https://deepmind.com/research/highlighted-research/alphafold" target="_blank">DeepMind's
+          AlphaFold</a> - Insights into how AI models can assist in biological and medical research.</li>
+    </ul>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 MedAI Development | All Rights Reserved</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>

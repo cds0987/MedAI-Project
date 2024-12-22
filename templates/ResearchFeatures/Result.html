@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Prediction Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Image Prediction Results</h1>
+        </div>
+        <div class="content">
+            <h2>Prediction Summary</h2>
+            <div class="image-container">
+                <img id="uploaded-image" src="{{ url_for('static', filename=img_path) }}" alt="Uploaded Image">
+            </div>
+            <p><strong>Predicted Label:</strong> <span id="predicted-label">{{ results['predicted_label'] }}</span></p>
+            <p><strong>Confidence Score:</strong> <span id="confidence-score">{{ results['confidence_score'] }}</span>
+            </p>
+
+        </div>
+        <div class="footer">
+            <p>Thank you for using our service!</p>
+        </div>
+    </div>
+</body>
+
+</html>

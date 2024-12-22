@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | MedAI</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Back to Main Page Link -->
+    <div class="back-to-main">
+      <a href="{{ url_for('route.index') }}" class="back-button">Back to Main Page</a>
+    </div>
+
+    <h1>About Us</h1>
+    <p>Welcome to MedAI! We are pioneers in applying artificial intelligence to revolutionize medical image diagnosis.
+      Our mission is to enhance diagnostic accuracy and efficiency, providing healthcare professionals with powerful
+      tools to improve patient outcomes.</p>
+
+    <!-- Company Overview Section -->
+    <section id="company-overview">
+      <h2>Company Overview</h2>
+      <p>MedAI leverages state-of-the-art AI technology to transform how medical images are analyzed. By integrating
+        deep learning, computer vision, and domain expertise, we deliver advanced solutions that empower healthcare
+        professionals to make faster and more accurate diagnoses. From detecting anomalies in radiology scans to
+        identifying diseases in pathology slides, MedAI is at the forefront of medical innovation.</p>
+    </section>
+
+    <!-- Mission and Vision Section -->
+    <section id="mission-vision">
+      <h2>Mission & Vision</h2>
+      <div class="mission">
+        <h3>Our Mission</h3>
+        <p>Our mission is to harness the power of AI to revolutionize medical image diagnosis. We aim to reduce
+          diagnostic errors, streamline workflows, and provide accessible tools that enable healthcare professionals to
+          deliver better care.</p>
+      </div>
+      <div class="vision">
+        <h3>Our Vision</h3>
+        <p>We envision a future where AI-driven image analysis becomes a cornerstone of modern healthcare, enabling
+          early disease detection, personalized treatment plans, and improved global health outcomes.</p>
+      </div>
+    </section>
+
+    <!-- Platform Features Section -->
+    <section id="platform-features">
+      <h2>Platform Features</h2>
+      <ul>
+        <li><strong>AI-Powered Diagnostics:</strong> Advanced deep learning models for detecting diseases such as
+          cancer, cataracts, and oral conditions from medical images.</li>
+        <li><strong>Segmentation and Localization:</strong> Tools for precise pixel-level segmentation and anomaly
+          localization to support clinical workflows.</li>
+        <li><strong>Customizable Workflows:</strong> Adaptable AI pipelines for different imaging modalities such as
+          X-rays, MRIs, CT scans, and histopathology slides.</li>
+        <li><strong>Integration with EMR Systems:</strong> Seamless integration with electronic medical records (EMRs)
+          for improved reporting and data management.</li>
+        <li><strong>Continuous Updates:</strong> Access to the latest AI advancements through regular model updates,
+          ensuring that our tools remain at the cutting edge of technology.</li>
+      </ul>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us">
+      <h2>Why Choose MedAI?</h2>
+      <p>MedAI offers a comprehensive AI solution tailored for medical image diagnosis. Our platform stands out due to:
+      </p>
+      <ul>
+        <li><strong>Expert Support:</strong> A dedicated team of AI specialists and medical professionals ready to
+          assist with deployment and clinical integration.</li>
+        <li><strong>Proven Accuracy:</strong> AI models rigorously validated with diverse datasets to ensure reliable
+          and consistent performance.</li>
+        <li><strong>Scalable Solutions:</strong> Scalable AI tools designed to meet the demands of healthcare providers,
+          from small clinics to large hospitals.</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 MedAI | All rights reserved</p>
+    </footer>
+  </div>
+</body>
+
+</html>

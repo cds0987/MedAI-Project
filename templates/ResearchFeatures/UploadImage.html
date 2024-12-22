@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Describe Molecule Image</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='moleculeimage.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Image Proccessing</h1>
+        </header>
+
+        <!-- Form Section -->
+        <section class="form-section">
+            <form action="feature/describe_image" method="post" enctype="multipart/form-data">
+                <div class="input-group">
+                    <label for="image">Choose an image:</label>
+                    <input type="file" id="image" name="image" accept="image/*" required>
+                </div>
+                <button type="submit" class="btn-submit">Upload and Describe</button>
+            </form>
+        </section>
+
+
+        <!-- Navigation Buttons -->
+        <section class="navigation-buttons">
+            <a href="{{ url_for('route.MainPage') }}" class="back-button">Back to Main Page</a>
+        </section>
+    </div>
+</body>
+
+</html>
